@@ -1,2 +1,2 @@
-Flask
-gunicorn
+pip install Flask
+pip install gunicorn
