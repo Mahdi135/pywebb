@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Python Code Runner</title>
+</head>
+<body>
+    <h1>Run Python Code</h1>
+    
+    <textarea id="code-input" rows="10" cols="50" placeholder="Enter Python code here..." onkeyup="showSuggestions(this.value)"></textarea><br><br>
+    <div id="suggestions"></div>
+    <button onclick="runPythonCode()">Run Code</button>
+
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+    <h3>Error:</h3>
+    <pre id="error"></pre>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
