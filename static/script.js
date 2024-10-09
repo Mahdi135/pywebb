@@ -18,16 +18,7 @@ function showSuggestions(value) {
             suggestionItem.classList.add('suggestion');
             suggestionItem.textContent = keyword;
             suggestionItem.onclick = () => {
-                // استبدال الحروف المكتوبة بالاقتراح المحدد
-                const codeInput = document.getElementById('code-input');
-                const currentText = codeInput.value;
-                const words = currentText.split(' '); // تقسيم النص إلى كلمات
-                // حذف الكلمة الأخيرة
-                words.pop();
-                // إضافة الاقتراح
-                words.push(keyword);
-                // تحديث حقل الإدخال
-                codeInput.value = words.join(' ') + ' '; // إعادة بناء النص
+                document.getElementById('code-input').value += keyword + ' ';
                 suggestions.innerHTML = '';
                 suggestions.style.display = 'none';
             };
